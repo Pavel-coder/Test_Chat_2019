@@ -4,41 +4,42 @@
 
 <!DOCTYPE html>
 <html>
+
 <head>
-<meta charset="UTF-8"/>
-<title>Изучаем язык JavaScript</title>
-<script type="text/javascript">
-function NewChat(){
-var FormNickname = document.getElementById("nickname").value;
-var FormMessage = document.getElementById("message").value;
-var Window = document.getElementById("chatWindow");
-Window.innerHTML+=(FormNickname + " " + FormMessage)+"<br>";
-chatWindow.scrollTop = chatWindow.scrollHeight;
-}
+	<meta charset="UTF-8" />
+	<title>Изучаем язык JavaScript</title>
+	<script type="text/javascript">
+		function NewChat() {
+			var FormNickname = document.getElementById("nickname").value;
+			var FormMessage = document.getElementById("message").value;
+			var Window = document.getElementById("chatWindow");
+			Window.innerHTML += (FormNickname + " " + FormMessage) + "<br>";
+			chatWindow.scrollTop = chatWindow.scrollHeight;
+		}
 
-</script>
-<style>
-#chatWindow, table {
-	border:7px solid #FF0040;
-	height: 100px;
-	width: 500px;
-	margin:  0 auto;
-	overflow-x: none;
-	overflow-y: scroll;
-}
-</style>
+	</script>
+	<style>
+		#chatWindow,
+		table {
+			border: 7px solid #FF0040;
+			height: 100px;
+			width: 500px;
+			margin: 0 auto;
+			overflow-x: none;
+			overflow-y: scroll;
+		}
+	</style>
 </head>
+
 <body>
-<h1 align="middle">NEW CHAT TEST GIT</h1>
-<hr />
-<div id="chatWindow" ></div><br /><br /><br />
-<label for="nickname">You Nickname</label>
-<input type="text" placeholder="Введите ваше имя" id="nickname" align="middle"></input><br /><br />
-<label for="message">You Message</label>
-<input type="text" placeholder="Введите сообщение" id="message"></input><br /><br />
-<button onclick="NewChat()">Отправить сообщение</button>
+	<h1 align="middle">NEW CHAT TEST GIT</h1>
+	<hr />
+	<div id="chatWindow"></div><br /><br /><br />
+	<label for="nickname">You Nickname</label>
+	<input type="text" placeholder="Введите ваше имя" id="nickname" align="middle"></input><br /><br />
+	<label for="message">You Message</label>
+	<input type="text" placeholder="Введите сообщение" id="message"></input><br /><br />
+	<button onclick="NewChat()">Отправить сообщение</button>
 </body>
+
 </html>
-
-
-
